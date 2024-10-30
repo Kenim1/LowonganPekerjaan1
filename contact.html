@@ -33,5 +33,19 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Portal Lowongan Kerja. All rights reserved.</p>
     </footer>
+    <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        const name = document.getElementById('name').value;
+        const message = document.getElementById('message').value;
+
+        if (name === '' || message === '') {
+            e.preventDefault(); // Mencegah form terkirim
+            alert('Semua kolom wajib diisi!');
+        } else {
+            alert('Pesan berhasil dikirim! Terima kasih.');
+        }
+    });
+</script>
+
 </body>
 </html>
