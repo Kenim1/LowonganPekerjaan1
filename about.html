@@ -23,5 +23,16 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Portal Lowongan Kerja. All rights reserved.</p>
     </footer>
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
 </body>
 </html>
